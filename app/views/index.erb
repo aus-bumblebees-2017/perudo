@@ -1,8 +1,39 @@
-<button class='box today' >
-  <p>Today</p>
-  <p>Sea Temp: 58 &#x2109;</p>
-</button>
-<button class='box tomorrow'>
-  <p>Tomorrow</p>
-  <p>Sea Temp: 60 &#x2109;</p>
-</button>
+<div class="image-background">
+  <div class="overlay">
+  </div>
+</div>
+<div class='today'>
+  <p class='today-summary'>TODAY'S OCEAN DEETS: </p>
+  <ul class='summaries'>
+    <li>
+      <img src="/images/otherwave.png">
+      <p class="summary">Swell Range: <%=@today_wave_range%></p>
+    </li>
+    <li>
+      <img src="/images/swim.png">
+      <p class="summary">Sea Temp: <%=@today_temp%> &#x2109;</p>
+    </li>
+  </ul>
+   
+  
+  
+</div>
+<div class='center'>
+  <button class='box box-0' >
+    <p>Today</p>
+    <p>Swell Range: <%=@today_wave_range%></p>
+    <p>Sea Temp: <%=@today_temp%> &#x2109;</p>
+  </button>
+  <button class='box box-1'>
+    <p>Tomorrow</p>
+    <p>Swell Range: <%=@split_squeezed_days[1][3][0]%>-<%=@split_squeezed_days[1][3][2]%>ft</p>
+    <p>&nbsp; </p>
+  </button>
+  <button class='box box-2'>
+    <p>The Day After Tomorrow</p>
+    <p>Swell Range: <%=@split_squeezed_days[2][3][0]%>-<%=@split_squeezed_days[1][3][2]%>ft</p>
+    <p>&nbsp; </p>
+  </button>
+</div>
+
+
