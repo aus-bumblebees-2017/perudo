@@ -1,0 +1,14 @@
+<div id="login">
+  <form action="/login" method="post">
+    <label>email:</label>
+    <input type="email" name="email">
+      <br>
+    <label>password:</label>
+    <input type="password" name="password">
+    <br>
+    <button type="submit">log in</button>
+  </form>
+  <% if @error %>
+    <p class="error"><%=@error%></p>
+  <%end%> 
+</div>

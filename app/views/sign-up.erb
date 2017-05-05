@@ -1,0 +1,19 @@
+<div id="sign-up">
+  <form action="/sign-up" method="post">
+    <label>user-name:</label>
+    <input type="user_name" name="email">
+    <br>
+    <label>email:</label>
+    <input type="email" name="email">
+    <br>
+    <label>password:</label>
+    <input type="password" name="password">
+    <br>
+    <button type="submit">sign in</button>
+  </form>
+  <% if @errors %>
+    <% @errors.each do |error| %>
+      <p class="error"><%=error%></p>
+    <%end%>
+  <%end%>
+</div>

@@ -1,0 +1,210 @@
+.container{
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.top {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.headers {
+  display: inline-block;
+  float: right;
+  padding-left: 15px;
+}
+.home-nav {
+  border-bottom: .5px solid #b7b7b7;
+}
+.wing-it {
+  font-family: Courier;
+  font-size: 2.8em;
+  margin-top: 10px;
+  width: 200px;
+  margin-left: 155px;
+  margin-bottom: 30px;
+}
+
+img {
+  width: 150px;
+  float: left;
+}
+.logo {
+  float: left;
+  list-style-type: none;
+}
+.error {
+  font-size: 1em;
+  color: red;
+}
+#home #selectproblem {
+  background-color: rgba(197, 224, 221, .1);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 2%;
+}
+
+#home #problem-generator {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#home #topic {
+  display: inline-block;
+  padding-left: 10%;
+}
+#home #problem {
+  display: inline-block;
+  padding-left: 10%;
+}
+#home #directions {
+  display: inline-block;
+  padding-left: 10%;
+}
+
+#home #second-line {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+#home #problem-display {
+  margin-top: 2%;
+  padding: 2% 3%;
+  width: 60%;
+  font-style: italic;
+}
+#home #problem-display #problem {
+  padding-left: 25%;
+}
+#home #problem-display #red {
+  font-size: .85em;
+  color: rgb(175, 84, 82);
+  text-shadow: .15px .15px 0px black;
+  padding-left: 50%;
+  text-align: center;
+  margin: 3px;
+  font-style: bold italic;
+}
+
+#home button {
+  margin-left: 65%;
+  margin-bottom: 2%;
+  padding: 10px;
+  background-color: rgba(128, 173, 124, .1);
+  border-radius: 3px;
+  border: rgba(128, 173, 124, .5) solid thin;
+}
+#home button:hover {
+  background-color: rgba(128, 173, 124, .8);
+}
+#home #common-wrong {
+  margin-top: 4%;
+  padding:3% 3%;
+  background-color: rgba(219, 135, 135, .1);
+  border: rgba(219, 135, 135, .5) solid thin;
+  border-radius: 7px;
+  width:  30%;
+  font-size: .8em;
+  float: right;
+  text-align: center;
+}
+#home footer {
+  margin-top: 100px;
+  color: #4c4c4c;
+}
+#home #common-wrong:hover {
+  background-color: rgba(219, 135, 135, .6)
+}
+/* toggle */
+#home .switch {
+  position: relative;
+  display: block;
+  vertical-align: top;
+  width: 130px;
+  height: 40px;
+  padding: 3px;
+  margin: 0 10px 10px 0;
+  border-radius: 3px;
+  cursor: pointer;
+  box-sizing:content-box;
+}
+#home .switch-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  box-sizing:content-box;
+}
+/*background when toggle is switched to "generator"*/
+#home .switch-label {
+  position: relative;
+  display: block;
+  height: inherit;
+  font-size: 10px;
+  text-transform: uppercase;
+  background: #fbfcc9;
+  border-radius: inherit;
+  box-shadow: 0px 0px 2px gray;
+  box-sizing:content-box;
+}
+#home .switch-label:before, .switch-label:after {
+  position: absolute;
+  top: 50%;
+  margin-top: -.5em;
+  line-height: 1;
+  -webkit-transition: inherit;
+  transition: inherit;
+  box-sizing:content-box;
+}
+/*font of "generator"*/
+#home .switch-label:before {
+  font-size: 1.07em;
+  content: attr(data-off);
+  right: 11px;
+  color: black;
+  text-shadow: 0px .01px rgba(71, 71, 71, 1);
+}
+/* font of "solver"*/
+#home .switch-label:after {
+  font-size: 1.07em;
+  content: attr(data-on);
+  left: 11px;
+  color: black;
+  text-shadow: 0px .2px rgba(255, 255, 255, 0.3);
+  opacity: 0;
+}
+/* background when toggle is switched to solver*/
+#home .switch-input:checked ~ .switch-label {
+  background: #b3d2e5;
+  /* rgb(88, 140, 78) green color*/
+  box-shadow: .1px .1px 1px black;
+}
+/* Dims out the word generator */
+#home .switch-input:checked ~ .switch-label:before {
+  opacity: 0;
+}
+#home .switch-input:checked ~ .switch-label:after {
+  opacity: 1;
+}
+#home .switch-handle {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 42px;
+  height: 36px;
+  border-radius: 3px;
+  box-shadow: .1px .1px 3px black;
+  background-color:rgba(249, 250, 252, .8);
+  border: thin solid rgba(76, 76, 76, .3);
+}
+
+#home .switch-input:checked ~ .switch-handle {
+  left: 88px;
+}
+ 
+/* Transition
+========================== */
+#home .switch-label, .switch-handle {
+  transition: All 0.3s ease;
+  -webkit-transition: All 0.3s ease;
+  -moz-transition: All 0.3s ease;
+  -o-transition: All 0.3s ease;
+}
