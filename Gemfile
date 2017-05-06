@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-ruby '2.3.4'
 # PostgreSQL driver
 gem 'pg'
 
@@ -18,6 +17,7 @@ gem 'rake'
 gem 'shotgun'
 gem 'pry'
 gem 'bcrypt'
+
 
 group :test do
   gem 'shoulda-matchers'

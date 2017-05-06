@@ -1,5 +1,6 @@
 require 'nokogiri'
 require 'open-uri'
+ 
 module ParseHelper
 
   def self.parse_page 
