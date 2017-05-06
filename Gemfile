@@ -13,6 +13,7 @@ gem 'activesupport'
 gem 'activerecord'
 
 gem 'rake'
+gem 'nokogiri'
 
 gem 'shotgun'
 gem 'pry'

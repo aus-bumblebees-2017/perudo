@@ -105,6 +105,7 @@ DEPENDENCIES
   capybara
   factory_girl
   faker
+  nokogiri
   pg
   pry
   rack-test
