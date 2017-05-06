@@ -30,17 +30,17 @@ module ParseHelper
 
   def self.split_by_hour(squeezed_days)
     squeezed_days.map do |day|
-      split_day = []
-      hour = []
-      day.chars.each_with_index do |char, index|
-        if index % 6 != 0
-          hour << char 
-        else
-          split_day << hour
-          hour = []
-        end 
+      day.split("ft")
+    end
+  end
+
+  def self.print_pretty(day)
+    day.map do |hour|
+      if hour.length < 3
+        "#{hour[1]} ft"
+      else 
+        "#{hour[1]}-#{hour[3]} ft"
       end
-      split_day[1..-1]
     end
   end
 end
