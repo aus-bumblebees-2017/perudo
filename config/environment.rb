@@ -18,7 +18,6 @@ require 'sinatra'
 require "sinatra/reloader" if development?
 
 require 'erb'
-require 'faker'
 require 'json'
 require 'pry'
 require 'bcrypt'
