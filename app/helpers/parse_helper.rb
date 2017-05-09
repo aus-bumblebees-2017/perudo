@@ -18,7 +18,7 @@ module ParseHelper
   def self.wave_heights_by_hour(page)
     today = page.css(".text-white").text[0..71]
     tomorrow = page.css(".text-white").text[72..143]
-    next_day = page.css(".text-white").text[143..215]
+    next_day = page.css(".text-white").text[142..215]
     [today, tomorrow, next_day]
   end
 
