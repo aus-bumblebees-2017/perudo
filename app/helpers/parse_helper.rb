@@ -37,10 +37,13 @@ module ParseHelper
 
   def self.print_pretty(day)
     day.map do |hour|
-      if hour.length < 3
+      p hour
+      if hour.length < 3 || hour.length > 6
         if hour.length == 1
           "#{hour[0]} ft"
-        elsif hour.length == 0
+        elsif hour[1] == "F"
+          "Flat"
+        elsif hour[1] == "0"
           "Flat"
         else
           "#{hour[1]} ft"
